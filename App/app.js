@@ -23,7 +23,44 @@ function weatherDetails(info) {
   console.log(info);
   // update degree value
   document.querySelector("#degrees").innerHTML = info.main.temp + "°";
+  // update min-degree value
   document.querySelector("#min-temp").innerHTML = info.main.temp_min + "°";
+  // update max-degree value
   document.querySelector("#max-temp").innerHTML = info.main.temp_max + "°";
+  // disply city-name
   document.querySelector("#city-name").innerHTML = info.name;
+
+  pickWeatherIcon(info);
+}
+
+function pickWeatherIcon(info) {
+  if (info.weather[0].main == "Clear") {
+    document.querySelector("#svg-sun").style.display = "inline-block";
+  } else {
+    document.querySelector("#svg-sun").style.display = "none";
+  }
+
+  if (info.weather[0].main == "Rain") {
+    document.querySelector("#svg-rain").style.display = "inline-block";
+  } else {
+    document.querySelector("#svg-rain").style.display = "none";
+  }
+
+  if (info.weather[0].main == "Clouds") {
+    document.querySelector("#svg-cloud").style.display = "inline-block";
+  } else {
+    document.querySelector("#svg-cloud").style.display = "none";
+  }
+
+  if (info.weather[0].main == "Extreme") {
+    document.querySelector("#svg-storm").style.display = "inline-block";
+  } else {
+    document.querySelector("#svg-storm").style.display = "none";
+  }
+
+  if (info.weather[0].main == "Snow") {
+    document.querySelector("#svg-snow").style.display = "inline-block";
+  } else {
+    document.querySelector("#svg-snow").style.display = "none";
+  }
 }

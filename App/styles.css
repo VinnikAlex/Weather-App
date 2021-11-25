@@ -9,6 +9,22 @@
   color: white;
 }
 
+.svg-sun {
+  display: none;
+}
+.svg-rain {
+  display: none;
+}
+.svg-storm {
+  display: none;
+}
+.svg-cloud {
+  display: none;
+}
+.svg-snow {
+  display: none;
+}
+
 .gridbox {
   display: grid;
   margin: 0 auto;
@@ -88,6 +104,11 @@
   transform: translate(0, -50%);
 }
 
+.svg-container {
+  width: 100%;
+  height: 150px;
+}
+
 .container-right p {
   font-size: 4.5rem;
   margin-bottom: 0;
@@ -97,6 +118,7 @@
 .container-right h1 {
   font-size: 3rem;
   font-weight: 500;
+  margin-top: 5rem;
 }
 
 .max-min-temp {
