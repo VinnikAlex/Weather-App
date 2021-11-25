@@ -29,6 +29,14 @@ function weatherDetails(info) {
   document.querySelector("#max-temp").innerHTML = info.main.temp_max + "°";
   // disply city-name
   document.querySelector("#city-name").innerHTML = info.name;
+  //update feels-like temperature
+  document.querySelector("#feels-like").innerHTML = info.main.feels_like + "°";
+  // update humidity
+  document.querySelector("#humidity").innerHTML = info.main.humidity + "%";
+  // update wind speed
+  document.querySelector("#wind-speed").innerHTML = info.wind.speed + "km/h";
+  // update pressure
+  document.querySelector("#pressure").innerHTML = info.main.pressure + "hPa";
 
   pickWeatherIcon(info);
 }

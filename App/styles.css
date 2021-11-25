@@ -64,6 +64,7 @@
   text-align: center;
   font-size: 1.2rem;
   margin-top: 1rem;
+  outline: none;
 }
 
 .left-box button {
@@ -148,5 +149,45 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
   text-align: center;
-  background-color: hotpink;
+  background-color: rgb(241, 241, 241);
+  height: 100px;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+.feels-like {
+  font-weight: 500;
+}
+
+.feels-like p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.humidity {
+  font-weight: 500;
+}
+
+.humidity p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.wind-speed {
+  font-weight: 500;
+}
+
+.wind-speed p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.pressure {
+  font-weight: 500;
+}
+
+.pressure p {
+  font-size: 1.5rem;
+  font-weight: 400;
 }
