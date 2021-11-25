@@ -1,10 +1,6 @@
 let searchButton = document.querySelector("#search");
-// let degree = document.querySelector("#degrees");
-
-// function citySearch() {
-//   let cityName = document.querySelector("#cityInput").value;
-//   return cityName;
-// }
+let minTemp = document.querySelector("#min-temp");
+let maxTemp = document.querySelector("#max-temp");
 
 searchButton.addEventListener("click", () => {
   userSearch = document.querySelector("#cityInput");
@@ -26,5 +22,8 @@ function requestApi(city) {
 function weatherDetails(info) {
   console.log(info);
   // update degree value
-  document.querySelector("#degrees").innerHTML = info.main.temp;
+  document.querySelector("#degrees").innerHTML = info.main.temp + "°";
+  document.querySelector("#min-temp").innerHTML = info.main.temp_min + "°";
+  document.querySelector("#max-temp").innerHTML = info.main.temp_max + "°";
+  document.querySelector("#city-name").innerHTML = info.name;
 }

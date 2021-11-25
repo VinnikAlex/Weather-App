@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+
 * {
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 ::placeholder {
@@ -33,7 +36,7 @@
 .left-box h1 {
   color: white;
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .left-box input {
@@ -43,7 +46,7 @@
   border-radius: 5px;
   border: 1.5px solid black;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.2rem;
   margin-top: 1rem;
 }
 
@@ -78,14 +81,50 @@
 .container-right {
   display: flex;
   align-items: center;
-  justify-content: space-around;
   flex-direction: column;
-  height: 50%;
+  height: 100%;
   position: relative;
   top: 50%;
   transform: translate(0, -50%);
 }
 
 .container-right p {
-  font-size: 5rem;
+  font-size: 4.5rem;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+
+.container-right h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.max-min-temp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1rem;
+}
+
+.min-temp {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: blue;
+  text-align: right;
+  margin-right: 3rem;
+}
+
+.max-temp {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: red;
+  text-align: left;
+  margin-left: 2rem;
+}
+
+.hourly-forecast {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  text-align: center;
+  background-color: hotpink;
 }
