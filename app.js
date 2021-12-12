@@ -53,6 +53,12 @@ function pickWeatherIcon(info) {
     document.querySelector("#svg-rain").style.display = "none";
   }
 
+  if (info.weather[0].main == "Fog") {
+    document.querySelector("#svg-fog").style.display = "inline-block";
+  } else {
+    document.querySelector("#svg-fog").style.display = "none";
+  }
+
   if (info.weather[0].main == "Clouds") {
     document.querySelector("#svg-cloud").style.display = "inline-block";
   } else {
