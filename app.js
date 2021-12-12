@@ -10,7 +10,6 @@ searchButton.addEventListener("click", () => {
 });
 
 function requestApi(city) {
-  let lang = "en";
   let units = "metric";
   let key = "adf44f9fcb4c64e2afb0feb4875d4291";
   let api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&appid=${key}`;
